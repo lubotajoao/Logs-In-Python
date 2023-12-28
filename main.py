@@ -10,12 +10,8 @@ process_name = "Download_Audio_Files_Teste"
 # getting the current task_name
 task_name = sys.argv[0]
 
-e = ""
 
-
-# noinspection PyGlobalUndefined
 def main():
-    global log_file_name, e
     try:
         create_csv_log_folder(log_path)
         log_file_name = create_csv_log_file(process_name)
